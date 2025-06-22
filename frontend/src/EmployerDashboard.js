@@ -39,7 +39,7 @@ function EmployerDashboard({ contract, account }) {
         if (contract) {
             fetchEmployees();
         }
-    }, [contract]);
+    }, [contract, fetchEmployees]);
 
     const isValidAddress = (address) => {
         try {

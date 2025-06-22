@@ -31,7 +31,7 @@ function EmployeeView({ contract, account }) {
         if (contract) {
             fetchEmployeeData();
         }
-    }, [contract, account]);
+    }, [contract, account, fetchEmployeeData]);
 
     useEffect(() => {
         if (employeeData && process.env.NODE_ENV === 'development') {
