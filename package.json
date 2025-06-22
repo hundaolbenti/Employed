@@ -16,6 +16,7 @@
     "solc": "^0.8.28"
   },
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ethers": "^5.8.0"
   }
 }
