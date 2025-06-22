@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 function EmployeeView({ contract, account }) {
     const [employeeData, setEmployeeData] = useState(null);
@@ -8,7 +8,7 @@ function EmployeeView({ contract, account }) {
     const [success, setSuccess] = useState('');
     const [simulatedTime, setSimulatedTime] = useState(0);
 
-    const fetchEmployeeData = async () => {
+    const fetchEmployeeData = useCallback(async () => {
         try {
             setLoading(true);
             const data = await contract.getEmployeeData(account);
@@ -25,7 +25,7 @@ function EmployeeView({ contract, account }) {
         } finally {
             setLoading(false);
         }
-    };
+    }, [contract, account]);
 
     useEffect(() => {
         if (contract) {

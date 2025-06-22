@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { ethers } from 'ethers';
 
 function EmployerDashboard({ contract, account }) {
@@ -10,7 +10,7 @@ function EmployerDashboard({ contract, account }) {
     const [success, setSuccess] = useState('');
     const [newEmployeeType, setNewEmployeeType] = useState('public');
 
-    const fetchEmployees = async () => {
+    const fetchEmployees = useCallback(async () => {
         try {
             setLoading(true);
             const addresses = await contract.getAllEmployeeAddresses();
@@ -33,7 +33,7 @@ function EmployerDashboard({ contract, account }) {
         } finally {
             setLoading(false);
         }
-    };
+    }, [contract]);
 
     useEffect(() => {
         if (contract) {
