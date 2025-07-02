@@ -37,6 +37,7 @@ Thumbs.db
 *.pid
 *.seed
 *.tgz
+*Zone.Identifier
 
 # VSCode
 .vscode/
