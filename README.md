@@ -1,11 +1,11 @@
 
-# ⏰ Decentralized Time Tracker DApp
+# Decentralized Time Tracker DApp
 
 > **A full-stack blockchain application for decentralized employee time tracking, built with Solidity, Hardhat, Ganache, and React.**
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Welcome to the **Time Tracker DApp**! This project lets employers and employees interact transparently on the blockchain:
 - **Employers** can register employees and track their work hours.
@@ -15,7 +15,7 @@ This guide will help you set up, run, and test the DApp from scratch.
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 1. [Prerequisites](#prerequisites)
 2. [Project Structure](#project-structure)
 3. [Installation](#installation)
@@ -31,7 +31,7 @@ This guide will help you set up, run, and test the DApp from scratch.
 ---
 
 
-## 🛠 Prerequisites
+## Prerequisites
 - [Node.js](https://nodejs.org/) (v16 or later recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 - [MetaMask](https://metamask.io/) browser extension
@@ -41,7 +41,7 @@ This guide will help you set up, run, and test the DApp from scratch.
 ---
 
 
-## 🗂 Project Structure
+## Project Structure
 ```
 Employed/
 │
@@ -59,7 +59,7 @@ Employed/
 ---
 
 
-## ⚡ Installation
+## Installation
 1. **Clone the repository:**
    ```bash
    git clone <your-repo-url>
@@ -81,7 +81,7 @@ Employed/
 ---
 
 
-## 🟤 Starting Ganache (Persistent Blockchain)
+## Starting Ganache (Persistent Blockchain)
 Start Ganache in persistent mode (from the project root):
 ```bash
 npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test test test test test test test test test test junk"
@@ -94,7 +94,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 🛠️ Compiling and Deploying Contracts
+## Compiling and Deploying Contracts
 1. **Compile contracts with Hardhat:**
    ```bash
    npx hardhat compile
@@ -110,7 +110,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 🖥️ Running the Frontend
+## Running the Frontend
 1. **Start the React app:**
    ```bash
    cd frontend
@@ -124,7 +124,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 🦊 Using MetaMask
+## Using MetaMask
 1. **Add the Ganache network to MetaMask:**
    - **Network Name:** `Ganache Local`
    - **New RPC URL:** `http://127.0.0.1:8545`
@@ -141,7 +141,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 🧪 Testing the DApp
+## Testing the DApp
 
 **Employer:**
 - Log in with the first Ganache account.
@@ -156,7 +156,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 💾 Persistence & Resetting
+## Persistence & Resetting
 
 **Persistence:**
 - As long as you use the same `ganache_data/` directory and mnemonic, your contracts and data will persist across Ganache restarts.
@@ -173,7 +173,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 🛟 Troubleshooting
+## Troubleshooting
 
 - **MetaMask not connecting:**
   - Make sure MetaMask is on the correct network (`localhost:8545`, Chain ID 1337).
@@ -189,7 +189,7 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 ---
 
 
-## 📝 Useful Commands
+## Useful Commands
 
 - **Start Ganache:**  
   `npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test test test test test test test test test test junk"`
@@ -202,4 +202,4 @@ npx ganache --db ganache_data --chain.chainId 1337 --wallet.mnemonic "test test 
 
 ---
 
-## 🎉 Enjoy building and testing your DApp!
+## Enjoy building and testing your DApp!
